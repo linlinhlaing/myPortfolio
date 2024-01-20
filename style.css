@@ -540,3 +540,16 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* ERROR SECTION */
+
+.error{
+  width: 100px;
+  height: 100px;
+}
+.jumbotron{
+  margin-top: 100px;
+}
+.btn{
+  width: 130px;
+}
