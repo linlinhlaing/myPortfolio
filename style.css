@@ -585,13 +585,14 @@ footer p {
 
 /* ERROR SECTION */
 
+
 .error{
-  width: 6.25rem;
-  height: 25rem;
+  width: 100px;
+  height: 100px;
 }
 .jumbotron{
-  margin-top: 25rem;
+  margin-top: 100px;
 }
 .btn{
-  width: 8.125;
+  width: 150px;
 }
