@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -126,7 +128,6 @@
         onclick="location.href='./#experience'"
       />
     </section>
-
     <section id="education">
         <p class="section__text__p1">Discover my</p>
         <h1 class="title">Education</h1>
@@ -165,7 +166,11 @@
         <hr>
 
         <div class="certifications">
-            <h2>Certifications</h2><br/>
+            <h2>Certifications                       
+               <img
+              src="./assets/certificate.png"
+              alt="AWS Certified Developer – Associate"
+              class="icon"/></h2> <br/>
         </div>
         <div class="certifications-lists">
             <ul>
@@ -173,25 +178,12 @@
                     <div id="socials-container_certification">
                         <a href="https://www.credly.com/badges/7e84b093-76a5-4c6a-be77-71ce0b77cf82/linked_in_profile">
                           AWS Certified Developer– Associate</a> 
-                        <img
-                        src="./assets/certificate.png"
-                        alt="AWS Certified Developer – Associate"
-                        class="icon"
-                        onclick="location.href='https://www.credly.com/badges/7e84b093-76a5-4c6a-be77-71ce0b77cf82/linked_in_profile'"
-                      />
                     </div>
                     </li>
                     <li>
                         <div id="socials-container_certification">
                           <a href="https://www.coursera.org/account/accomplishments/verify/Y252NJZA6QX7">
                             Supervised Machine Learning: Regression and Classification</a>
-                            
-                            <img
-                            src="./assets/certificate.png"
-                            alt="Supervised Machine Learning: Regression and Classification"
-                            class="icon"
-                            onclick="location.href='https://www.coursera.org/account/accomplishments/verify/Y252NJZA6QX7'"
-                          />
                         </div>
                         </li>                   
                         <li>
@@ -199,13 +191,6 @@
                               <a href="https://www.coursera.org/account/accomplishments/verify/8QAW8CUMUQEW">
                                 Advance Learning Algorithm
                               </a>
-                      
-                                <img
-                                src="./assets/certificate.png"
-                                alt="Advance Learning Algorithm"
-                                class="icon"
-                                onclick="location.href='https://www.coursera.org/account/accomplishments/verify/8QAW8CUMUQEW'"
-                              />
                             </div>
                           </li>
                           <li>
@@ -213,13 +198,6 @@
                               <a href="https://coursera.org/share/d8ac61ebd76133ae737a6ccf5c82395a">
                                 Linear Algebra for Machine Learning and Data Science
                               </a>
-                              
-                                <img
-                                src="./assets/certificate.png"
-                                alt="Linear Algebra for Machine Learning and Data Science"
-                                class="icon"
-                                onclick="location.href='https://coursera.org/share/d8ac61ebd76133ae737a6ccf5c82395a'"
-                              />
                             </div>
                           </li>
             </ul>
@@ -227,11 +205,6 @@
         <hr>
 
     </section>
-
-
-
-
-
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -498,7 +471,7 @@
           <input type="text" id="subject" name="subject">
 
 
-          <label for="comment">Write Comment</label>
+          <label for="comment">Message</label>
           <textarea type="text" id="message" name="message" rows="10" cols="20"></textarea>
         
           <input type="submit" value="Submit">
