@@ -268,7 +268,7 @@ html {
 }
 
 .btn-color-2 {
-  background: none;
+  background: rgb(0, 0, 0);
 }
 
 .btn-color-2:hover {
@@ -525,7 +525,6 @@ article .icon {
 }
 
 
-
 /* CONTACT SECTION */
 input[type=text], select {
   width: 100%;
@@ -540,7 +539,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+button{
   width: 23%;
   background-color: rgb(119, 119, 233);
   color: white;
@@ -561,8 +560,9 @@ textarea{
 
 }
 
-input[type=submit]:hover {
-  background-color: rgb(150, 150, 239);
+button:hover {
+  /* background-color: rgb(150, 150, 239); */
+  background-color: rgb(63, 63, 240);
 }
 
 
