@@ -9,6 +9,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -462,23 +463,34 @@
       <div class="contact-info-upper-container">
 
         <div class="contact-info-container">
-        <form action="/action_page.php">
+        <form>
           
           <label for="name">Name</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required>
 
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject">
+          <input type="text" id="subject" name="subject" required>
+
 
 
           <label for="comment">Message</label>
-          <textarea type="text" id="message" name="message" rows="10" cols="20"></textarea>
+          <textarea type="text" id="message" name="message" rows="10" cols="20" required></textarea>
         
-          <input type="submit" value="Submit">
+          <!-- <input type="submit" value="Submit"> -->
+          <button type="button" onclick="callAPI(
+            document.getElementById('name').value,
+            document.getElementById('email').value,
+            document.getElementById('subject').value,
+            document.getElementById('message').value)">Call API</button>
         </form>
+        
       </div>
     </div>
     </section>
+    <br>
     <footer>
       <nav>
         <div class="nav-links-container">
