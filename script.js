@@ -5,14 +5,21 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-   var callAPI = (name, email, subject, message) => {
-    // instantiate a headers object
+  function callAPI(name, email, subject, message) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var myHeaders = new Headers();
-    // add content type header to object
+    if (name.trim() === '' || email.trim() === '' || subject.trim() === '' || message.trim() === '') {
+      alert('Please fill in all fields before submitting.');
+      return; // Stop further execution if any field is empty
+    }
+
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return; // Stop further execution if email format is incorrect
+    }
+  
     myHeaders.append("Content-Type", "application/json");
-    // using built-in JSON utility package turn object to string and store in a variable
     var raw = JSON.stringify({"name": name, "email": email, "subject": subject, "message": message});
-    // create a JSON object with parameters for API call and store in a variable
     var requestOptions = {
         method: 'POST',
         headers: myHeaders,
@@ -24,6 +31,11 @@ function toggleMenu() {
         .then(response => response.text())
         .then(result => alert("Form submitted successfully!"))
         .catch(error => console.log('error', error));
+        
+        const apiResponse = true;
+        if (apiResponse) {
+          alert('Form submitted successfully!!!');
+        }
 }
 
 
