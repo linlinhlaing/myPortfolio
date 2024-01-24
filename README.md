@@ -23,3 +23,10 @@
 1. Created AWS Lambda ,DynamoDB and API Gateway
 2. added POST method for contact form.
 3. Updated template design.
+
+## Jan 22
+1. Integrated AWS SES for email notification via contact form.
+
+## Jan24
+1. Write a blog.
+2. Updated template for blog section.
