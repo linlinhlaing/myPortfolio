@@ -30,3 +30,6 @@
 ## Jan24
 1. Write a blog.
 2. Updated template for blog section.
+
+## Jan 28
+1. Record a video.
